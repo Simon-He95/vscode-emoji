@@ -5,6 +5,8 @@
 
 :WIP> vscode Search for emoji images
 
+![demo](assets/demo.gif)
+
 ## :coffee:
 
 [buy me a cup of coffee](https://github.com/Simon-He95/sponsor)
