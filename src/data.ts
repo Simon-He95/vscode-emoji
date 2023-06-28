@@ -42,6 +42,8 @@ const Writing_Hand = ['✍🏻', '✍🏼', '✍🏽', '✍🏾', '✍🏿']
 const Nail_Polish = ['💅', '💅🏼', '💅🏽', '💅🏾', '💅🏿']
 const Selfie = ['🤳', '🤳', '🤳🏽', '🤳🏾', '🤳🏿']
 const Flexed_Biceps = ['💪', '💪🏼', '💪🏼', '💪🏽', '💪🏿']
+const Rightwards_Pushing_Hand = ['🫸', '🫸🏼', '🫸🏽', '🫸🏾', '🫸🏿']
+const Leftwards_Pushing_Hand = ['🫷', '🫷🏻', '🫷🏼', '🫷🏽', '🫷🏿']
 const Leg = ['🦵', '🦵🏼', '🦵🏽', '🦵🏾', '🦵🏿']
 const Foot = ['🦶', '🦶🏼', '🦶🏽', '🦶🏾', '🦶🏿']
 const Ear = ['👂', '👂🏼', '👂🏽', '👂🏾', '👂🏿']
@@ -145,6 +147,8 @@ export const data = [
   ...transfer('Writing Hand', Writing_Hand),
   ...transfer('Nail Polish', Nail_Polish),
   ...transfer('Selfie', Selfie),
+  ...transfer('Rightwards Pushing Hand', Rightwards_Pushing_Hand),
+  ...transfer('Leftwards Pushing Hand', Leftwards_Pushing_Hand),
   ...transfer('Flexed Biceps', Flexed_Biceps),
   ...transfer('Leg', Leg),
   ...transfer('Foot', Foot),
@@ -209,12 +213,6 @@ export const data = [
   ...apple,
 ]
 
-function transfer(base: string, data: any) {
-  return [
-    [`${base}`, data[0]],
-    [`${base}: Medium-Light Skin Tone`, data[1]],
-    [`${base}: Medium Skin Tone`, data[2]],
-    [`${base}: Medium-Dark Skin Tone`, data[3]],
-    [`${base}: Dark Skin Tone`, data[4]],
-  ]
+function transfer(base: string, data: string[]) {
+  return data.map((item: string) => [base, item])
 }

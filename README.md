@@ -3,7 +3,7 @@
 </p>
 <p align="center"> English | <a href="./README_zh.md">简体中文</a></p>
 
-:WIP> vscode中搜索emoji图片
+:WIP> vscode Search for emoji images
 
 ## :coffee:
 
