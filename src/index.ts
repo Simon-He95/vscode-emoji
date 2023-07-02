@@ -4,7 +4,7 @@ import { data } from './data'
 
 export function activate(context: vscode.ExtensionContext) {
   const cacheMap = data.map(([content, detail]) => createCompletionItem({ content: `${content}${detail}`, detail, snippet: detail }))
-  context.subscriptions.push(registerCompletionItemProvider(['markdown', 'plaintext', 'javascript', 'javascriptreact', 'typescriptreact', 'html', 'vue', 'css'], () => cacheMap, [':']))
+  context.subscriptions.push(registerCompletionItemProvider(['markdown', 'plaintext'], () => cacheMap, [' ']))
 }
 
 export function deactivate() {
