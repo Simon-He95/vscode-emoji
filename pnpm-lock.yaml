@@ -11,8 +11,8 @@ devDependencies:
     specifier: ^1.77.0
     version: 1.77.0
   '@vscode-use/utils':
-    specifier: ^0.0.26
-    version: 0.0.26
+    specifier: ^0.0.29
+    version: 0.0.29
   bumpp:
     specifier: ^9.1.0
     version: 9.1.0
@@ -680,8 +680,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@vscode-use/utils@0.0.26:
-    resolution: {integrity: sha512-NciqDib3QZ8LgBAKmENhQq6Pnmbs7pdzLwKfgc5fpocD/vBVXOuB+of4HDQKPkaSI6JCDkSiATUXoMLAtiYLhA==}
+  /@vscode-use/utils@0.0.29:
+    resolution: {integrity: sha512-Asfj9l6GyYpA/kkdqrLuQgmipRg9hKtprOw9F3HvY4pbx8plmVDVFv/88zElyRtOgP6r5HEEgwteAriygjXroQ==}
     engines: {vscode: ^1.77.0}
     dev: true
 
