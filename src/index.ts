@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
     })
   }))
 
-  const cacheMap = data.map(([content, detail]) => {
+  const cacheMap = data.map(([content, detail]: any) => {
     const item = createCompletionItem({ content: `${content}${detail}`, detail, snippet: detail, type: 4 })
     item.command = {
       title: detail,
