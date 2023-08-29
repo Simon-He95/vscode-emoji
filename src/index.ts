@@ -5,8 +5,10 @@ import { data } from './data'
 export function activate(context: vscode.ExtensionContext) {
   context.subscriptions.push(registerCommand('emoji.select', (emoji) => {
     const { line, lineText } = getSelection()!
+    const word = `:${emoji}`
+    const lineStart = lineText.indexOf(word)
     updateText((edit) => {
-      edit.replace(createRange([line, 0], [line, lineText.length]), lineText.replace(`:${emoji}`, emoji))
+      edit.replace(createRange([line, lineStart], [line, lineStart + word.length - 1]), word.slice(1))
     })
   }))
 
