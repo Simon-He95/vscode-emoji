@@ -2,7 +2,7 @@
   "publisher": "simonhe",
   "name": "vscode-emoji",
   "displayName": "vscode-emoji",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "packageManager": "pnpm@8.1.1",
   "description": "vscode-emoji",
   "author": "Simon He <https://github.com/Simon-He95>",
